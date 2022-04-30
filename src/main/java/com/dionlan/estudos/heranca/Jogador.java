@@ -6,6 +6,19 @@ public class Jogador {
 	int x;
 	int y;
 	
+	/*
+	 * Construtor padrão chamando o construtor com argumentos;
+	 * As classes filhas podem chamar qualquer um, mas nesse caso continuarão com o construtor padrão passando os argumentos;
+	 */
+	public Jogador() {
+		this(0, 0);
+	}
+	
+	public Jogador(int x, int y) {
+		this.x = x;
+		this.y = y;
+	}
+	
 	boolean atacar(Jogador oponente) {
 		int deltaX = Math.abs(x - oponente.x); //distancia absoluta (modulo) da posicao entre dois jogadores
 		int deltaY = Math.abs(y - oponente.y);
@@ -14,6 +27,7 @@ public class Jogador {
 			oponente.vida -= 10;
 			return true;
 		}else if(deltaX == 1 && deltaY == 0) { // mesma coluna no Y e lado a lado no X
+			oponente.vida -= 10;
 			return true;
 		}else {
 			return false; //apos a movimentacao, nao houve adjacencia para ataque
