@@ -2,11 +2,11 @@ package com.dionlan.estudos.heranca.desafio;
 
 public class Ferrari extends Carro {
 
-	Ferrari(){
+	public Ferrari(){
 		this(315); //chama o construtor abaixo que chama a super classe Carro passando a velocidade maxima da Ferrari
 	}
 	
-	Ferrari(double velocidadeMaxima){
+	public Ferrari(double velocidadeMaxima){
 		super(velocidadeMaxima);
 		delta = 20;
 	}

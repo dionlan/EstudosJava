@@ -2,15 +2,15 @@ package com.dionlan.estudos.heranca.desafio;
 
 public class Celta extends Carro {
 
-	Celta(){
+	public Celta(){
 		super(120);
 	}
 	
-	void acelerar(){
+	public void acelerar(){
 		super.acelerar();
 	}
 	
-	void frear(){
+	public void frear(){
 		super.acelerar();
 	}
 }

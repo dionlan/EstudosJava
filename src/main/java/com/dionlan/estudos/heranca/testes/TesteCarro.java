@@ -1,4 +1,8 @@
-package com.dionlan.estudos.heranca.desafio;
+package com.dionlan.estudos.heranca.testes;
+
+import com.dionlan.estudos.heranca.desafio.Carro;
+import com.dionlan.estudos.heranca.desafio.Celta;
+import com.dionlan.estudos.heranca.desafio.Ferrari;
 
 public class TesteCarro {
 

@@ -8,14 +8,14 @@ package com.dionlan.estudos.heranca.desafio;
 public class Carro {
 
 	final double VELOCIDADE_MAXIMA;
-	double velocidadeAtual = 0;
-	int delta = 5;
+	protected double velocidadeAtual = 0;
+	protected int delta = 5;
 	
-	Carro(double velocidadeMaxima){
+	protected Carro(double velocidadeMaxima){
 		VELOCIDADE_MAXIMA = velocidadeMaxima;
 	}
 	
-	void acelerar() {
+	public void acelerar() {
 		if(velocidadeAtual + delta > VELOCIDADE_MAXIMA) {
 			velocidadeAtual = VELOCIDADE_MAXIMA;
 		} else {
@@ -23,7 +23,7 @@ public class Carro {
 		}
 	}
 	
-	void frear() {
+	public void frear() {
 		if(velocidadeAtual >= 5) {
 			velocidadeAtual -= 5;
 		} else {

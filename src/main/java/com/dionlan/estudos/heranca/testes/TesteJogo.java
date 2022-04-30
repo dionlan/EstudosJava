@@ -1,4 +1,8 @@
-package com.dionlan.estudos.heranca;
+package com.dionlan.estudos.heranca.testes;
+
+import com.dionlan.estudos.heranca.Direcao;
+import com.dionlan.estudos.heranca.Heroi;
+import com.dionlan.estudos.heranca.Monstro;
 
 public class TesteJogo {
 
